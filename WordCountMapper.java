@@ -12,7 +12,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Mapper.Context;
 
-public class MyMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
+public class WordCountMapper extends Mapper<LongWritable, Text, Text, IntWritable> {
 
 	public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
 		String inputstring = value.toString();
